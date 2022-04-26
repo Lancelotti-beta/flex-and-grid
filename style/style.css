@@ -1,0 +1,10 @@
+body{
+    background-color: var(--corpo);
+    font-family: 'Open Sans', sans-serif;
+    color: var(--fonte);
+}
+
+.container__cabecalho{
+    display: flex;
+    justify-content: space-evenly;
+}
