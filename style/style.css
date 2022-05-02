@@ -46,7 +46,19 @@ body{
 
     width: 75vw;
     height: 100vh;
+
+    position: absolute;
+    left: -100vw;
+
+    transition: ease-in .32s;
 }
+
+.menu-lateral__ativo{
+    left: 0;
+
+    transition: ease-in-out .32s;
+}
+
 
 .menu-lateral__logo{
     align-self: center;
@@ -104,7 +116,6 @@ body{
 .menu-lateral__link--pinturas::before{
     content: var(--pinturas);
 }
-
 
 
 
