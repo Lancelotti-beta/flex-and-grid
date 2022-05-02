@@ -8,6 +8,7 @@
 
     <!-- Reset Css -->
     <link rel="stylesheet" href="flex-e-grid-main/assets/css/reset.css">
+
     <!-- Css Page -->
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/style.css">
@@ -23,10 +24,19 @@
 <body>
 
     <header class="container__cabecalho">
-        <button class="container__menu">menu</button>
+        <button class="container__menu" aria-label="menu"><i></i></button>
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="Logo da HZC" class="container__logo">
-        <button class="container__notificacao">notificaçaõ</button>
+        <button class="container__notificacao" aria-label="notificação"><i></i></button>
     </header>
+    <nav class="menu-lateral">
+        <img src="flex-e-grid-main/assets/img/logo.svg" alt="logotipo da HZC" class="menu-lateral__logo">
+        <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Incio</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--video">Vidios</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--pico">Picos</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
+        <a href="#"class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
+    </nav>
 
 </body>
 

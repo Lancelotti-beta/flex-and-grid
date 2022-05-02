@@ -1,10 +1,112 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../flex-e-grid-main/assets/font/icones.ttf);
+}
+
 body{
     background-color: var(--corpo);
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', 'icones', sans-serif;
     color: var(--fonte);
 }
 
+/* ====== Header - Nav ====== */
 .container__cabecalho{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--cabeçalho-mobile);
+    box-shadow: var(--sombras);
+
+    padding: 8px 16px;
 }
+
+/* ====== Icones Cabeçalho ====== */
+.container__menu i::before{
+    content: var(--menu);
+    font-size: 24px;
+}
+
+.container__notificacao i::before{
+    content: var(--notificacao);
+    font-size: 24px;
+}
+
+.container__logo{
+    width: 40px;
+}
+
+/* ====== Menu Lateral ====== */
+
+.menu-lateral{
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--menu-lateral);
+
+    width: 75vw;
+    height: 100vh;
+}
+
+.menu-lateral__logo{
+    align-self: center;
+    width: 118px;
+
+    padding: var(--espacamento-interno-corpo);
+}
+
+.menu-lateral__link{
+    height: 64px;
+    color: var(--fonte-alternativa);
+
+    padding-left: 64px;
+
+    display: flex;
+    align-items: center;
+}
+
+.menu-lateral__link--ativo{
+    color: var(--fonte);
+    padding-left: 56px;
+    border-left: 8px solid var(--fonte);
+}
+
+.menu-lateral__link::before{
+    content: "";
+    width: var(--espacamento-título-cartão-itens);
+    height: var(--espacamento-título-cartão-itens);
+    font-size: var(--espacamento-título-cartão-itens);
+
+    position: absolute;
+    left: var(--espacamento-título-cartão-itens);
+}
+
+.menu-lateral__link--inicio::before{
+    content: var(--inicio);
+}
+
+.menu-lateral__link--video::before{
+    content: var(--videos);
+}
+
+.menu-lateral__link--pico::before{
+    content: var(--pico);
+}
+
+.menu-lateral__link--integrantes::before{
+    content: var(--integrantes);
+}
+
+.menu-lateral__link--camisas::before{
+    content: var(--camisas);
+}
+
+.menu-lateral__link--pinturas::before{
+    content: var(--pinturas);
+}
+
+
+
+
+
+

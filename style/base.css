@@ -29,12 +29,34 @@
     /* Espaçamentos */
 
     --espaco-interno-botão: 8px;
-
     --espaco-entre-elementos-botao: 8px;
 
     --espaco-entre-elementos: 16px/8px;
 
     --espacamento-interno-corpo: 16px;
 
-    --espacamento-título-cartão-recentes-itens: 24px;
+    --espacamento-título-cartão-itens: 24px;
+
+    /* Icones */
+    --camisas: "\e900";
+    --carrinho: "\e901";
+
+    --inicio: "\e902";
+    --integrantes: "\e903";
+
+    --menu:"\e904";
+    --moeda: "\e905";
+    --notificacao: "\e906";
+
+    --pico: "\e908";
+    --picos: "\e909";
+
+    --pinturas: "\e90a";
+
+    --play: "\e90b";
+    --relogio: "\e90c";
+    --seta-baixo: "\e90d";
+
+    --videos: "\e90e";
+    --visualizacao: "\e90f";
 }
