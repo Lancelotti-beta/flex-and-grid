@@ -1,5 +1,8 @@
 .principal{
     padding: 24px 16px;
+
+    display: grid;
+    gap: 16px;
 }
 
 .titulo-pagina{
@@ -17,11 +20,17 @@
     background-color: var(--cartao);
 }
 
+.cartao--destaque{
+    margin-bottom: 16px;
+}
+
 .cartao__conteudo{
     padding: 16px;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: auto 1fr;
+
+    gap: 8px;
 }
 
 .cartao__destaque{
@@ -72,6 +81,8 @@
     border-radius: 10px;
 
     font-size: .9rem;
+
+    justify-self: flex-end;
 }
 
 .cartao__botao--play::before{
@@ -88,3 +99,27 @@
 .cartao__botao--destaque::before{
     margin-right: var(--espaco-interno-botao);
 }
+
+/* ============ Section Cartões de Videos ============ */
+
+.sessao{
+    display: grid;
+    gap: 16px;
+}
+
+
+/* ============ Section Cartões de Videos ============ */
+.compra{
+    display: grid;
+    gap: 16px; 
+}
+
+.cartao__info--valor::before{
+    content: var(--moeda);
+    margin-right: var(--espaco-interno-botao);
+}
+
+.cartao__botao--compra::before{
+    content: var(--carrinho);
+}
+
