@@ -37,6 +37,10 @@ body{
     width: 40px;
 }
 
+.container-perfil{
+    display: none;
+}
+
 /* ====== Menu Lateral ====== */
 
 .menu-lateral{
@@ -122,6 +126,86 @@ body{
     content: var(--pinturas);
 }
 
+
+/* ============= Media ================*/
+@media screen and (min-width: 1440px) {
+    body{
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+
+    /* ====== Menu Nav ====== */
+    .container__cabecalho{
+        background-color: var(--cabecalho);
+
+        display: grid;
+        grid-template-columns: 1fr auto;
+        column-gap: 32px;
+        grid-column: 2;
+
+        padding: 16px 60px;
+
+        height: 80px;
+
+        box-sizing: border-box;
+    }
+
+    .container__menu{
+        display: none;
+    }
+
+    .container__logo{
+        display: none;
+    }
+
+    .container-perfil{
+        display: grid;
+        grid-template-columns:  repeat(3, auto);
+        column-gap: 8px;
+
+        align-items: center;
+        justify-self: flex-end;
+
+        color: var(--fonte-alternativa);
+
+        padding: 8px 32px;
+
+        border-right: 1px solid var(--fonte-alternativa);
+    }
+
+    .container-perfil::before{
+        content: "";
+
+        display: block;
+
+        height: 32px;
+        width: 32px;
+
+        background-image: url(../flex-e-grid-main/assets/img/profile_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .container-perfil::after{
+        content: var(--seta-baixo);
+
+        color: var(--fonte);
+
+        font-size: 1.5rem;
+    }
+
+    /* ====== Menu Lateral ====== */
+    .menu-lateral{
+        position: static;
+        width: 200px;
+
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+
+}
 
 
 

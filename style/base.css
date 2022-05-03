@@ -12,7 +12,7 @@
     --fonte: #FFFFFF;
     --fonte-alternativa: #95999C;
 
-    --links: #0480DC;
+    --link: #0480DC;
     --botao: #0480DC;
 
     --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
@@ -31,7 +31,8 @@
     --espaco-interno-botao: 8px;
     --espaco-entre-elementos-botao: 8px;
 
-    --espaco-entre-elementos: 16px/8px;
+    --espaco-entre-elementos-auto: 16px;
+    --espaco-entre-elementos-baixo: 8px;
 
     --espacamento-interno-corpo: 16px;
 
