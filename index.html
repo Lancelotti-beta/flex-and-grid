@@ -12,6 +12,7 @@
     <!-- Css Page -->
     <link rel="stylesheet" href="style/base.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cartao.css">
 
     <!-- Import Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,7 +28,9 @@
         <button class="container__menu" aria-label="menu"><i></i></button>
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="Logo da HZC" class="container__logo">
         <button class="container__notificacao" aria-label="notificação"><i></i></button>
+        
     </header>
+
     <nav class="menu-lateral">
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="logotipo da HZC" class="menu-lateral__logo">
         <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Incio</a>
@@ -38,7 +41,25 @@
         <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
     </nav>
 
+    <main class="principal">
+        <h2 class="titulo-pagina">Inicio</h2>
+        
+        <article class="cartao">
+            <img src="flex-e-grid-main/assets/img/banner-mobile_1.png" alt="Banner do cartao" class="cartao__img">
+            <div class="cartao__conteudo">
+                <p class="cartao__destaque">Vídeo em destaque</p>
+                <h3 class="cartao__titulo">HZC - Titulo</h3>
+                <p class="cartao__perfil">Bruno Lopez</p>
+                <p class="cartao__info cartao__info--tempo">33 minutos</p>
+                <p class="cartao__info cartao__info--vizualizacao">100 view</p>
+                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+            </div>
+        </article>
 
+    </main>
+
+
+    <!--  script de função da página    -->
     <script src="js/script.js"></script>
 </body>
 

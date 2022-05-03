@@ -3,17 +3,17 @@
     /* Cores */
     --corpo: #1D232A;
 
-    --cabeçalho: #1D232A;
-    --cabeçalho-mobile: #15191C;
+    --cabecalho: #1D232A;
+    --cabecalho-mobile: #15191C;
     --menu-lateral: #15191C;
 
-    --cartão: #2C343A;
+    --cartao: #2C343A;
 
     --fonte: #FFFFFF;
     --fonte-alternativa: #95999C;
 
     --links: #0480DC;
-    --botão: #0480DC;
+    --botao: #0480DC;
 
     --sombras: 0px 4px 4px rgba(0, 0, 0, 0.16);
 
@@ -28,14 +28,14 @@
 
     /* Espaçamentos */
 
-    --espaco-interno-botão: 8px;
+    --espaco-interno-botao: 8px;
     --espaco-entre-elementos-botao: 8px;
 
     --espaco-entre-elementos: 16px/8px;
 
     --espacamento-interno-corpo: 16px;
 
-    --espacamento-título-cartão-itens: 24px;
+    --espacamento-titulo-cartao-itens: 24px;
 
     /* Icones */
     --camisas: "\e900";

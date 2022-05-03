@@ -15,7 +15,7 @@ body{
     justify-content: space-between;
     align-items: center;
 
-    background-color: var(--cabeçalho-mobile);
+    background-color: var(--cabecalho-mobile);
     box-shadow: var(--sombras);
 
     padding: 8px 16px;
@@ -55,10 +55,13 @@ body{
 
 .menu-lateral__ativo{
     left: 0;
-
+    
     transition: ease-in-out .32s;
 }
 
+/* .menu-lateral__escondido{
+    display: none;
+} */
 
 .menu-lateral__logo{
     align-self: center;
@@ -85,12 +88,12 @@ body{
 
 .menu-lateral__link::before{
     content: "";
-    width: var(--espacamento-título-cartão-itens);
-    height: var(--espacamento-título-cartão-itens);
-    font-size: var(--espacamento-título-cartão-itens);
+    width: var(--espacamento-titulo-cartao-itens);
+    height: var(--espacamento-titulo-cartao-itens);
+    font-size: var(--espacamento-titulo-cartao-itens);
 
     position: absolute;
-    left: var(--espacamento-título-cartão-itens);
+    left: var(--espacamento-titulo-cartao-itens);
 }
 
 .menu-lateral__link--inicio::before{
