@@ -136,6 +136,52 @@
         grid-column: 2;
 
         padding: 16px 60px;
+
+        grid-template-areas:
+            "titulo-pagina titulo-pagina titulo-pagina"
+            "cartao--destaque__banner cartao--destaque__banner cartao--recentes__videos"
+            "titulo-sessao titulo-sessao titulo-sessao"
+            "sessao sessao sessao"
+            "cartao--recentes__arte cartao--destaque__arte cartao--destaque__arte"
+            "titulo-sessao__compra titulo-sessao__compra titulo-sessao__compra"
+            "compra compra compra"
+        ;
+    }
+
+    /* ====== Grid area ====== */
+    .titulo-pagina{
+        grid-area: titulo-pagina;
+    }
+
+    .cartao--destaque__banner{
+        grid-area: cartao--destaque__banner;
+    }
+    
+    .cartao--recentes__videos{
+        grid-area: cartao--recentes__videos;
+    }
+
+    .titulo-sessao{
+        grid-area: titulo-sessao;
+    }
+
+    .sessao{
+        grid-area: sessao;
+    }
+    
+    .cartao--recentes__arte{
+        grid-area: cartao--recentes__arte;
+    }
+    .cartao--destaque__arte{
+        grid-area: cartao--destaque__arte;
+    }
+
+    .titulo-sessao__compra{
+        grid-area: titulo-sessao__compra;
+    }
+
+    .compra{
+        grid-area: compra;
     }
 
     /* ============ Cartões Recentes ============ */

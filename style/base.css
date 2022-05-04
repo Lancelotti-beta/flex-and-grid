@@ -19,8 +19,8 @@
 
     /* Tamanhos */
     --tamanho-dispositivo-mobile: 360px;
-    --tamanho-dispositivo-desktop: 1440px;
 
+    --tamanho-dispositivo-desktop: 1440px;
     --largura-maxima-conteudo-principal: 1120px;
     --largura-maxima-cartao-desktop: 256px;
 
