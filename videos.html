@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,7 +10,6 @@
 
     <!-- Css Page -->
     <link rel="stylesheet" href="style/base.css">
-    
     <link rel="stylesheet" href="style/styleHome.css">
     <link rel="stylesheet" href="style/cartao.css">
 
@@ -20,11 +18,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
 
-    <title>HZC | Home</title>
+    <title> HZC | Vídeos </title>
 </head>
-
 <body>
-
+    
     <header class="container__cabecalho">
         <button class="container__menu" aria-label="menu"><i></i></button>
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="Logo da HZC" class="container__logo">
@@ -35,8 +32,8 @@
 
     <nav class="menu-lateral">
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="logotipo da HZC" class="menu-lateral__logo">
-        <a href="#" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Incio</a>
-        <a href="videos.html" class="menu-lateral__link menu-lateral__link--video">Vidios</a>
+        <a href="index.html" class="menu-lateral__link menu-lateral__link--inicio">Incio</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--video menu-lateral__link--ativo">Vidios</a>
         <a href="picos.html" class="menu-lateral__link menu-lateral__link--pico">Picos</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
         <a href="#"class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
@@ -46,7 +43,7 @@
     <main class="principal">
 
         <!-- Sessão de Cartões de Videos -->
-        <h2 class="titulo-pagina">Inicio</h2>
+        <h2 class="titulo-pagina">Vídeos</h2>
         
         <article class="cartao cartao--destaque cartao--destaque__banner">
             <img src="flex-e-grid-main/assets/img/banner-mobile_1.png" alt="Banner do cartao" class="cartao__img cartao__img--mobile">
@@ -54,14 +51,14 @@
             <div class="cartao__conteudo">
                 <p class="cartao__destaque">Vídeo em destaque</p>
                 <h3 class="cartao__titulo">HZC - Life is... / 2021</h3>
-                <p class="cartao__perfil">Bruno Lopez</p>
+                <p class="cartao__perfil cartao__perfil--video">Bruno Lopez</p>
                 <p class="cartao__info cartao__info--tempo">33 minutos</p>
                 <p class="cartao__info cartao__info--vizualizacao">100 view</p>
-                <button class="cartao__botao cartao__botao--play cartao__botao--destaque">Assistir agora</button>
+                <button class="cartao__botao cartao__botao--play cartao__botao--destaque cartao__botao--video">Assistir agora</button>
             </div>
         </article>
         <article class="cartao cartao--recentes cartao--recentes__videos">
-            <h3 class="cartao__titulo">Vídeos recentes</h3>
+            <h3 class="cartao__titulo">Favoritos</h3>
             <a href="videos.html" class="cartao__link">Ver todos</a>
             <ul class="cartao__lista">
                 <li class="cartao__item">
@@ -133,107 +130,8 @@
 
         </section>
 
-        <!-- Sessão de Cartões de Venda - Camisas -->
-        <article class="cartao cartao--recentes cartao--recentes__arte">
-            <h3 class="cartao__titulo">Novas artes</h3>
-            <a href="#" class="cartao__link">Ver todos</a>
-            <ul class="cartao__lista">
-                <li class="cartao__item">
-                    <img src="flex-e-grid-main/assets/img/Rectangle97.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">Sem título 01</h4>
-                    <p class="cartao__item-perfil">Antonio Tebyriçá</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="flex-e-grid-main/assets/img/Rectangle97(1).png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">Sem título 02</h4>
-                    <p class="cartao__item-perfil">Antonio Tebyriçá</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="flex-e-grid-main/assets/img/Rectangle97(2).png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">Segurança</h4>
-                    <p class="cartao__item-perfil">Raphael Gibson</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="flex-e-grid-main/assets/img/Rectangle97(3).png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">Malunguisse</h4>
-                    <p class="cartao__item-perfil">Carolina Canavarro</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="flex-e-grid-main/assets/img/Rectangle97(4).png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">Coroa da converse</h4>
-                    <p class="cartao__item-perfil">Nikolas de Murtas</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="flex-e-grid-main/assets/img/Rectangle97(5).png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">Segurança</h4>
-                    <p class="cartao__item-perfil">Raphael Gibson</p>
-                </li>
-                <li class="cartao__item">
-                    <img src="flex-e-grid-main/assets/img/Rectangle97.png" alt="Thumbnail" class="cartao__item-thumbnail">
-                    <h4 class="cartao__item-titulo">Sem título 03</h4>
-                    <p class="cartao__item-perfil">Antonio Tebyriçá</p>
-                </li>
-            </ul>
-
-        </article>
-        <article class="cartao cartao--destaque cartao--destaque__arte">
-            <img src="flex-e-grid-main/assets/img/banner-mobile_2.png" alt="Banner do cartao" class="cartao__img cartao__img--mobile">
-            <img src="flex-e-grid-main/assets/img/banner_2.png" alt="Banner do cartao" class="cartao__img cartao__img--desktop">
-            <div class="cartao__conteudo">
-                <p class="cartao__destaque">nova arte</p>
-                <h3 class="cartao__titulo">Only Zika - Lagoa Dompa Club</h3>
-                <p class="cartao__perfil">João ZMS</p>
-                <p class="cartao__info cartao__info--valor">33,33</p>
-                <p class="cartao__info cartao__info--vizualizacao">53 view</p>
-                <button class="cartao__botao cartao__botao--compra cartao__botao--destaque">Comprar agora</button>
-            </div>
-        </article>
-        <section class="compra">
-            <h3 class="titulo-sessao__compra section--titulo">Camisas mais recentes</h3>
-            <article class="cartao">
-                <img src="flex-e-grid-main/assets/img/produto_1.png" alt="Camisa" class="cartao__img">
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">André Soares</p>
-                    <h3 class="cartao__titulo">IBM</h3>
-                    <p class="cartao__info cartao__info--valor">33,33</p>
-                    <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
-                </div>
-            </article>
-            <article class="cartao">
-                <img src="flex-e-grid-main/assets/img/produto_2.png" alt="Camisa" class="cartao__img">
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Bruno Lopez</p>
-                    <h3 class="cartao__titulo">Hurflez Crew Philosopy Club</h3>
-                    <p class="cartao__info cartao__info--valor">33</p>
-                    <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
-                </div>
-            </article>
-            <article class="cartao">
-                <img src="flex-e-grid-main/assets/img/produto_3.png" alt="Camisa" class="cartao__img">
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Luiza Sampaio</p>
-                    <h3 class="cartao__titulo">Corujita noturna</h3>
-                    <p class="cartao__info cartao__info--valor">33</p>
-                    <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
-                </div>
-            </article>
-            <article class="cartao">
-                <img src="flex-e-grid-main/assets/img/produto_4.png" alt="Camisa" class="cartao__img">
-                <div class="cartao__conteudo">
-                    <p class="cartao__perfil">Bruno Lopez</p>
-                    <h3 class="cartao__titulo">GGG - Gatin G Gorro</h3>
-                    <p class="cartao__info cartao__info--valor">33,33</p>
-                    <button class="cartao__botao cartao__botao--compra" aria-label="Assistir agora"></button>
-                </div>
-            </article>
-
-        </section>
-
     </main>
 
-
-    <!--  script de função da página    -->
     <script src="js/script.js"></script>
 </body>
-
 </html>

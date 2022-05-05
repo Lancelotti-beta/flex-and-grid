@@ -17,4 +17,13 @@ $menu.addEventListener('click', () => {
     $nav.classList.toggle('menu-lateral__ativo');
 })
 
+// const $menuLateral = document.querySelectorAll('.menu-lateral__link');
 
+// function linkAtivo() {
+//     $menuLateral.forEach((item) =>
+//         item.classList.remove('menu-lateral__link--ativo'));
+//     this.classList.add('menu-lateral__link--ativo');
+// }
+
+// $menuLateral.forEach((item) =>
+//     item.addEventListener('click', linkAtivo));

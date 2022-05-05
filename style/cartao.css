@@ -1,16 +1,23 @@
-.principal{
+.principal {
     padding: 24px 16px;
 
     display: grid;
     gap: 16px;
 }
 
-.titulo-pagina{
+.titulo-pagina {
     font-size: 1.5rem;
     font-weight: 700;
 }
 
-.cartao{
+.section--titulo{
+    font-size: var(--espacamento-titulo-cartao-itens);
+    font-weight: 700;
+    font-style: normal;
+    line-height: 32px;
+}
+
+.cartao {
     width: 100%;
 
     border-radius: 15px;
@@ -20,11 +27,15 @@
     background-color: var(--cartao);
 }
 
-.cartao--destaque{
+.cartao--destaque {
     margin-bottom: 16px;
 }
 
-.cartao__conteudo{
+.cartao__img--desktop {
+    display: none;
+}
+
+.cartao__conteudo {
     padding: 16px;
 
     display: grid;
@@ -33,42 +44,43 @@
     gap: 8px;
 }
 
-.cartao__destaque{
+.cartao__destaque {
     grid-column: span 2;
 }
 
-.cartao__titulo{
-    font-size: 1.2rem;
+.cartao__titulo {
+    font-size: 18px;
     font-weight: 700;
+    line-height: 24px;
 
     grid-column: span 2;
 }
 
-.cartao__perfil{
+.cartao__perfil {
     color: var(--fonte-alternativa);
     font-size: .9rem;
 
     grid-column: span 2;
 }
 
-.cartao__info{
+.cartao__info {
     display: flex;
     align-items: center;
 
     color: var(--fonte-alternativa);
 }
 
-.cartao__info--tempo::before{
+.cartao__info--tempo::before {
     content: var(--relogio);
     margin-right: var(--espaco-interno-botao);
 }
 
-.cartao__info--vizualizacao::before{
+.cartao__info--vizualizacao::before {
     content: var(--visualizacao);
     margin-right: var(--espaco-interno-botao);
 }
 
-.cartao__botao{
+.cartao__botao {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -85,51 +97,73 @@
     justify-self: flex-end;
 }
 
-.cartao__botao--play::before{
+.cartao__botao--play::before {
     content: var(--play);
     font-size: 24px;
 }
 
-.cartao__botao--destaque{
+.cartao__botao--destaque {
     width: 100%;
 
     grid-column: span 2;
 }
 
-.cartao__botao--destaque::before{
+.cartao__botao--destaque::before {
     margin-right: var(--espaco-interno-botao);
 }
 
 /* ============ Section Cartões de Videos ============ */
 
-.sessao{
+.sessao {
     display: grid;
     gap: 16px;
 }
 
 
 /* ============ Section Cartões de Videos ============ */
-.compra{
+.compra {
     display: grid;
-    gap: 16px; 
+    gap: 16px;
 }
 
-.cartao__info--valor::before{
+.cartao__info--valor::before {
     content: var(--moeda);
     margin-right: var(--espaco-interno-botao);
 }
 
-.cartao__botao--compra::before{
+.cartao__botao--compra::before {
     content: var(--carrinho);
 }
 
 /* ============ Cartões Recentes ============ */
-.cartao--recentes{
+.cartao--recentes {
     display: none;
 }
 
 @media screen and (min-width: 1440px) {
-    .principal{
+
+    /* ====== Ajuste Imagens ====== */
+
+    .cartao__img--desktop {
+        display: block;
+    }
+
+    .cartao__img--mobile {
+        display: none;
+    }
+
+    /* ====== Ajuste Card Destaque ====== */
+    .cartao--destaque {
+        margin-bottom: 0;
+    }
+
+    .cartao__botao--destaque {
+        grid-column: auto;
+        padding: var(--espacamento-interno-botao);
+    }
+
+    /* ====== Grid area e Card ====== */
+    .principal {
         display: grid;
         grid-template-columns: auto 1fr auto;
         column-gap: 32px;
@@ -140,57 +174,59 @@
         grid-template-areas:
             "titulo-pagina titulo-pagina titulo-pagina"
             "cartao--destaque__banner cartao--destaque__banner cartao--recentes__videos"
-            "titulo-sessao titulo-sessao titulo-sessao"
             "sessao sessao sessao"
             "cartao--recentes__arte cartao--destaque__arte cartao--destaque__arte"
-            "titulo-sessao__compra titulo-sessao__compra titulo-sessao__compra"
             "compra compra compra"
         ;
     }
 
-    /* ====== Grid area ====== */
-    .titulo-pagina{
+    .titulo-pagina {
         grid-area: titulo-pagina;
     }
 
-    .cartao--destaque__banner{
+    .cartao--destaque__banner {
         grid-area: cartao--destaque__banner;
     }
-    
-    .cartao--recentes__videos{
+
+    .cartao--recentes__videos {
         grid-area: cartao--recentes__videos;
     }
 
-    .titulo-sessao{
-        grid-area: titulo-sessao;
+    .sessao {
+        grid-area: sessao;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    .sessao{
-        grid-area: sessao;
+    .titulo-sessao {
+
+        grid-column: span 4;
     }
-    
-    .cartao--recentes__arte{
+
+    .cartao--recentes__arte {
         grid-area: cartao--recentes__arte;
     }
-    .cartao--destaque__arte{
+
+    .cartao--destaque__arte {
         grid-area: cartao--destaque__arte;
     }
 
-    .titulo-sessao__compra{
-        grid-area: titulo-sessao__compra;
-    }
-
-    .compra{
+    .compra {
         grid-area: compra;
+        grid-template-columns: repeat(4, 1fr);
     }
 
-    /* ============ Cartões Recentes ============ */
-    .cartao--recentes{
+    .titulo-sessao__compra {
+        grid-column: span 4;
+    }
+
+    /* ============ Cartões Recentes - Card ============ */
+    .cartao--recentes {
         display: grid;
         grid-template-columns: repeat(2, auto);
         row-gap: 24px;
 
         align-items: center;
+        align-self: flex-start;
 
         width: 256px;
 
@@ -199,11 +235,11 @@
         box-sizing: border-box;
     }
 
-    .cartao--recentes .cartao__titulo{
+    .cartao--recentes .cartao__titulo {
         grid-column: auto;
     }
 
-    .cartao__link{
+    .cartao__link {
         font-size: .8rem;
         font-weight: 600;
 
@@ -212,32 +248,76 @@
         justify-self: flex-end;
     }
 
-    .cartao__lista{
+    .cartao__lista {
         display: grid;
-        row-gap: var(--espacamento-interno-corpo-auto);
+        row-gap: var(--espaco-entre-elementos-auto);
         grid-column: span 2;
     }
 
-    .cartao__item{
+    .cartao__item {
         display: grid;
         grid-template-columns: auto 1fr;
-        gap: var(--espacamento-interno-corpo-baixo);
+        gap: var(--espaco-entre-elementos-baixo);
     }
 
-    .cartao__item-thumbnail{
+    .cartao__item-thumbnail {
         width: 32px;
         grid-row: span 2;
     }
 
-    .cartao__item-titulo{
+    .cartao__item-titulo {
         font-size: .9rem;
         line-height: 1.2rem;
         font-weight: 700;
     }
 
-    .cartao__item-perfil{
+    .cartao__item-perfil {
         font-size: .8rem;
         color: var(--fonte-alternativa);
     }
 
+
+    /* ====== Page Video ====== */
+    .cartao__perfil--video {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 8px;
+
+        grid-column: 1;
+        grid-row: 3;
+
+        align-items: center;
+        justify-self: flex-start;
+    }
+
+    .cartao__perfil--video::before {
+        content: "";
+
+        display: block;
+
+        height: 32px;
+        width: 32px;
+
+        background-image: url(../flex-e-grid-main/assets/img/profile_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .cartao__botao--video {
+        grid-column: 2;
+        grid-row: 3;
+
+        width: 153px;
+    }
+    
 }
+
+/* ====== Page Picos ====== */
+
+.cartao__botao--map::before{
+    content: var(--picos);
+    font-size: 24px;
+}
+
+

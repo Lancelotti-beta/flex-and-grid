@@ -1,0 +1,16 @@
+
+/* ====== Sub-Page Picos ====== */
+.pico__img--mobile{
+    width: 100vw; 
+}
+
+.sessao__pico--desktop{
+    display: none;
+}
+
+@media screen and (min-width: 1440px) {
+    .sessao__pico--desktop{
+        display: block;
+        
+    }
+}

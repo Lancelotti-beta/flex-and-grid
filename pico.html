@@ -10,38 +10,102 @@
 
     <!-- Css Page -->
     <link rel="stylesheet" href="style/base.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/styleHome.css">
     <link rel="stylesheet" href="style/cartao.css">
+
+    <link rel="stylesheet" href="style/subPage.css">
 
     <!-- Import Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap">
 
-    <title> HZC | Pico </title>
+    <title> HZC | Picos </title>
 </head>
 <body>
     <header class="container__cabecalho">
         <button class="container__menu" aria-label="menu"><i></i></button>
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="Logo da HZC" class="container__logo">
+        <p class="container-perfil">Bruno Lopez</p>
         <button class="container__notificacao" aria-label="notificação"><i></i></button>
         
     </header>
 
     <nav class="menu-lateral">
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="logotipo da HZC" class="menu-lateral__logo">
-        <a href="index.html" class="menu-lateral__link menu-lateral__link--inicio menu-lateral__link--ativo">Incio</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--video">Vidios</a>
-        <a href="picos.html" class="menu-lateral__link menu-lateral__link--pico">Picos</a>
+        <a href="index.html" class="menu-lateral__link menu-lateral__link--inicio">Incio</a>
+        <a href="videos.html" class="menu-lateral__link menu-lateral__link--video">Vidios</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--pico menu-lateral__link--ativo">Picos</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
         <a href="#"class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
     </nav>
-    
-    <main>
-        
-    </main>
 
+    <img src="flex-e-grid-main/assets/img/artigo_1.png" alt="Imagem do artigo" class="cartao__img cartao__img--mobile pico__img--mobile">
+    <main class="principal">
+        
+        <article class="cartao--destaque cartao--destaque__banner">
+            <img src="flex-e-grid-main/assets/img/artigo_1.png" alt="Imagem do artigo" class="cartao__img cartao__img--desktop">
+            <h3 class="cartao__titulo">Gap do Itaú da Voluntários da Pátria</h3>
+            <p class="cartao__perfil">Bruno Lopez</p>
+            <p class="cartao__info cartao__info--vizualizacao">33 view</p>
+        </article>
+
+        <!-- Texto da pagina -->
+        <section class="sessao">
+            <article>
+    
+            </article>
+            
+        </section>
+
+        <!-- Cards de Conteudo lateral -->
+        <section class="sessao__pico--desktop">
+            <h3 class="cartao__titulo">Outros Picos Similares</h3>
+            <a href="#">
+                <article class="cartao">
+                    <img src="flex-e-grid-main/assets/img/Rectangle5(0).png" alt="Video" class="cartao__img">
+                    <div class="cartao__conteudo">
+                        <p class="cartao__perfil">Bruno Lopez</p>
+                        <h3 class="cartao__titulo">Gap do Itaú da Voluntários da Pátria</h3>
+                        <p class="cartao__info cartao__info--vizualizacao">33 view</p>
+                        <button class="cartao__botao cartao__botao--map" aria-label="Assistir agora"></button>
+                    </div>
+                </article>
+                
+            </a>
+            <article class="cartao">
+                <img src="flex-e-grid-main/assets/img/Rectangle5.png" alt="Video" class="cartao__img">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Luiza Sampaio</p>
+                    <h3 class="cartao__titulo">Gap com mureta da Voluntários</h3>
+                    <p class="cartao__info cartao__info--vizualizacao">33 view</p>
+                    <button class="cartao__botao cartao__botao--map" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="flex-e-grid-main/assets/img/Rectangle5(1).png" alt="Video" class="cartao__img">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">André Soares</p>
+                    <h3 class="cartao__titulo">Rampa de entrada do túnel Rebouças</h3>
+                    <p class="cartao__info cartao__info--vizualizacao">33 view</p>
+                    <button class="cartao__botao cartao__botao--map" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+            <article class="cartao">
+                <img src="flex-e-grid-main/assets/img/Rectangle5(2).png" alt="Video" class="cartao__img">
+                <div class="cartao__conteudo">
+                    <p class="cartao__perfil">Júlia Fonseca</p>
+                    <h3 class="cartao__titulo">Wallride de pedra portuguesa da FGP</h3>
+                    <p class="cartao__info cartao__info--vizualizacao">33 view</p>
+                    <button class="cartao__botao cartao__botao--map" aria-label="Assistir agora"></button>
+                </div>
+            </article>
+
+        </section>
+
+    </main>
+    
     <script src="js/script.js"></script>
 </body>
 </html>
