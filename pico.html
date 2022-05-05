@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,58 +23,59 @@
 
     <title> HZC | Picos </title>
 </head>
+
 <body>
     <header class="container__cabecalho">
         <button class="container__menu" aria-label="menu"><i></i></button>
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="Logo da HZC" class="container__logo">
         <p class="container-perfil">Bruno Lopez</p>
         <button class="container__notificacao" aria-label="notificação"><i></i></button>
-        
+
     </header>
 
     <nav class="menu-lateral">
         <img src="flex-e-grid-main/assets/img/logo.svg" alt="logotipo da HZC" class="menu-lateral__logo">
         <a href="index.html" class="menu-lateral__link menu-lateral__link--inicio">Incio</a>
         <a href="videos.html" class="menu-lateral__link menu-lateral__link--video">Vidios</a>
-        <a href="#" class="menu-lateral__link menu-lateral__link--pico menu-lateral__link--ativo">Picos</a>
+        <a href="picos.html" class="menu-lateral__link menu-lateral__link--pico menu-lateral__link--ativo">Picos</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--integrantes">Integrantes</a>
-        <a href="#"class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
+        <a href="#" class="menu-lateral__link menu-lateral__link--camisas">Camisas</a>
         <a href="#" class="menu-lateral__link menu-lateral__link--pinturas">Pinturas</a>
     </nav>
 
-    <img src="flex-e-grid-main/assets/img/artigo_1.png" alt="Imagem do artigo" class="cartao__img cartao__img--mobile pico__img--mobile">
-    <main class="principal">
-        
+    <img src="flex-e-grid-main/assets/img/artigo_1.png" alt="Imagem do artigo"
+        class="cartao__img cartao__img--mobile pico__img--mobile"
+    />
+    <main class="principal--subpage">
+
         <article class="cartao--destaque cartao--destaque__banner">
-            <img src="flex-e-grid-main/assets/img/artigo_1.png" alt="Imagem do artigo" class="cartao__img cartao__img--desktop">
-            <h3 class="cartao__titulo">Gap do Itaú da Voluntários da Pátria</h3>
-            <p class="cartao__perfil">Bruno Lopez</p>
-            <p class="cartao__info cartao__info--vizualizacao">33 view</p>
+            <img src="flex-e-grid-main/assets/img/artigo_1.png" alt="Imagem do artigo"
+                class="cartao__img--desktop pico__img--desktop"
+            />
+            <div class="cartao__conteudo">
+                <h3 class="cartao__titulo">Gap do Itaú da Voluntários da Pátria</h3>
+                <p class="cartao__perfil cartao__perfil--grid">Bruno Lopez</p>
+                <p class="cartao__info cartao__info--vizualizacao cartao__info--grid">33 view</p>
+
+            </div>
         </article>
 
         <!-- Texto da pagina -->
-        <section class="sessao">
-            <article>
-    
-            </article>
-            
+        <section class="sessao--conteudo">
+            <div class="cartao__conteudo">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem provident a cupiditate est
+                    nemo doloribus quasi architecto dolorem reprehenderit non atque blanditiis nisi, corporis eligendi
+                    explicabo quo laborum necessitatibus repellendus?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem provident a cupiditate est
+                    nemo doloribus quasi architecto dolorem reprehenderit non atque blanditiis nisi, corporis eligendi
+                    explicabo quo laborum necessitatibus repellendus?
+                </p>
+            </div>
+
         </section>
 
         <!-- Cards de Conteudo lateral -->
         <section class="sessao__pico--desktop">
-            <h3 class="cartao__titulo">Outros Picos Similares</h3>
-            <a href="#">
-                <article class="cartao">
-                    <img src="flex-e-grid-main/assets/img/Rectangle5(0).png" alt="Video" class="cartao__img">
-                    <div class="cartao__conteudo">
-                        <p class="cartao__perfil">Bruno Lopez</p>
-                        <h3 class="cartao__titulo">Gap do Itaú da Voluntários da Pátria</h3>
-                        <p class="cartao__info cartao__info--vizualizacao">33 view</p>
-                        <button class="cartao__botao cartao__botao--map" aria-label="Assistir agora"></button>
-                    </div>
-                </article>
-                
-            </a>
+            <h3 class="cartao__titulo cartao__titulo--grid">Outros Picos Similares</h3>
             <article class="cartao">
                 <img src="flex-e-grid-main/assets/img/Rectangle5.png" alt="Video" class="cartao__img">
                 <div class="cartao__conteudo">
@@ -105,7 +107,8 @@
         </section>
 
     </main>
-    
+
     <script src="js/script.js"></script>
 </body>
+
 </html>

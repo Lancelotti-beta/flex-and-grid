@@ -1,16 +1,62 @@
-
 /* ====== Sub-Page Picos ====== */
-.pico__img--mobile{
-    width: 100vw; 
+.pico__img--mobile {
+    width: 100vw;
 }
 
-.sessao__pico--desktop{
+.sessao__pico--desktop {
     display: none;
 }
 
 @media screen and (min-width: 1440px) {
-    .sessao__pico--desktop{
-        display: block;
-        
+
+    .principal--subpage {
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 32px;
+        grid-column: 2;
+
+        grid-template-areas:
+            "cartao--destaque cartao--destaque sessao__pico--desktop"
+            "sessao--conteudo sessao--conteudo sessao__pico--desktop"
+            "sessao--conteudo sessao--conteudo sessao__pico--desktop"
+        ;
+
+        padding: 16px 60px;
+    }
+
+    .cartao--destaque {
+        grid-area: cartao--destaque;
+    }
+
+    .cartao__perfil--grid {
+        display: flex;
+        grid-column: 1;
+        align-self: center;
+    }
+
+    .cartao__info--grid {
+        justify-self: flex-end;
+        grid-column: 2;
+        align-self: center;
+    }
+
+    .sessao__pico--desktop {
+        grid-area: sessao__pico--desktop;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 32px;
+    }
+
+    .cartao__titulo--grid {
+        grid-column: span 1;
+        grid-row: auto;
+    }
+
+    .sessao--conteudo {
+        grid-area: sessao--conteudo;
+    }
+
+    .pico__img--desktop {
+        width: 100%;
     }
 }
