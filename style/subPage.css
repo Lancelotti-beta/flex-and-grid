@@ -7,6 +7,15 @@
     display: none;
 }
 
+.cartao__imagem {
+    width: 100%;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+}
+
 @media screen and (min-width: 1440px) {
 
     .principal--subpage {
@@ -14,19 +23,53 @@
         grid-template-columns: auto 1fr auto;
         column-gap: 32px;
         grid-column: 2;
+        padding: 16px 60px;
 
         grid-template-areas:
-            "cartao--destaque cartao--destaque sessao__pico--desktop"
+            "cartao--destaque__grid cartao--destaque__grid sessao__pico--desktop"
             "sessao--conteudo sessao--conteudo sessao__pico--desktop"
-            "sessao--conteudo sessao--conteudo sessao__pico--desktop"
+            "sessao--conteudo__imagem sessao--conteudo__imagem sessao__pico--desktop"
+            "sessao--conteudo-p2 sessao--conteudo-p2 none"
+            "sessao--conteudo__imagem-2 sessao--conteudo__imagem-2 none"
+            "sessao--conteudo-p3 sessao--conteudo-p3 none"
         ;
 
         padding: 16px 60px;
     }
 
-    .cartao--destaque {
-        grid-area: cartao--destaque;
+    .cartao--destaque__grid {
+        grid-area: cartao--destaque__grid;
     }
+
+    .sessao__pico--desktop {
+        grid-area: sessao__pico--desktop;
+        display: grid;
+        grid-gap: 32px;
+    }
+
+    .sessao--conteudo-p2 {
+        grid-area: sessao--conteudo-p2;
+    }
+
+    .sessao--conteudo-p3 {
+        grid-area: sessao--conteudo-p3;
+    }
+
+    .sessao--conteudo__imagem {
+        grid-area: sessao--conteudo__imagem;
+    }
+
+    .sessao--conteudo__imagem-2 {
+        grid-area: sessao--conteudo__imagem-2;
+    }
+
+
+    .sessao--conteudo__imagem {
+        grid-area: sessao--conteudo__imagem;
+        display: grid;
+        grid-gap: 32px;
+    }
+
 
     .cartao__perfil--grid {
         display: flex;
@@ -40,23 +83,28 @@
         align-self: center;
     }
 
-    .sessao__pico--desktop {
-        grid-area: sessao__pico--desktop;
-        display: grid;
-        grid-template-rows: repeat(3, 1fr);
-        grid-gap: 32px;
-    }
+
 
     .cartao__titulo--grid {
         grid-column: span 1;
         grid-row: auto;
     }
 
-    .sessao--conteudo {
-        grid-area: sessao--conteudo;
+
+    .sessao--artigo__img {
+        border-radius: 15px;
+        overflow: hidden;
+
+        display: grid;
+        gap: 32px;
+    }
+
+    .cartao__conteudo--img {
+        display: grid;
     }
 
     .pico__img--desktop {
         width: 100%;
     }
+
 }
