@@ -10,7 +10,7 @@
     font-weight: 700;
 }
 
-.section--titulo{
+.section--titulo {
     font-size: var(--espacamento-titulo-cartao-itens);
     font-weight: 700;
     font-style: normal;
@@ -58,7 +58,11 @@
 
 .cartao__perfil {
     color: var(--fonte-alternativa);
+    
     font-size: .9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
 
     grid-column: span 2;
 }
@@ -138,6 +142,12 @@
 /* ============ Cartões Recentes ============ */
 .cartao--recentes {
     display: none;
+}
+
+/* ====== Page Videos ====== */
+
+.cartao__botao--video {
+    grid-column: span 2;
 }
 
 @media screen and (min-width: 1440px) {
@@ -309,15 +319,16 @@
         grid-row: 3;
 
         width: 153px;
+
+        justify-self: flex-end;
     }
-    
+
 }
+
 
 /* ====== Page Picos ====== */
 
-.cartao__botao--map::before{
+.cartao__botao--map::before {
     content: var(--picos);
     font-size: 24px;
 }
-
-

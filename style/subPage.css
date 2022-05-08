@@ -1,36 +1,138 @@
 /* ====== Sub-Page Picos ====== */
-.pico__img--mobile {
-    width: 100vw;
-}
 
 .sessao__pico--desktop {
     display: none;
 }
 
 .cartao__img {
+    width: 100vw;
+    overflow: hidden;
+}
+
+.cartao__titulo--subpage {
+    grid-column: span 2;
+
+    font-style: normal;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: 700;
+
+    margin: 16px 0px;
+}
+
+.texto {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 32px;
+
+    margin: 16px 0px;
+}
+
+.cartao__conteudo--subpage {
+    padding: 0px;
+    grid-template-columns: auto auto;
+}
+
+.img--desktop {
+    display: none;
+}
+
+.img--mobile {
+    display: block;
+}
+
+.cartao__img {
     width: 100%;
+    overflow: hidden;
+}
 
+.sessao--artigo__img {
     border-radius: 15px;
-
     overflow: hidden;
 
+    margin: 16px 0px;
 }
+
+.cartao__conteudo--texto {
+    display: grid;
+    gap: 8px;
+}
+
+.cartao__info--grid {
+    grid-row: 2;
+    grid-column: 2;
+
+    align-self: center;
+    justify-self: flex-end;
+}
+
+.cartao__perfil--subpage {
+    display: flex;
+    grid-row: 2;
+    grid-column: 1;
+
+    align-items: center;
+    justify-self: flex-start;
+}
+
+.cartao__perfil--subpage::before {
+    content: "";
+
+    display: block;
+
+    height: 48px;
+    width: 48px;
+
+    background-image: url(../flex-e-grid-main/assets/img/profile_2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    margin-right: var(--espaco-interno-botao);
+}
+
+
 
 @media screen and (min-width: 1440px) {
 
+    /* Texto Config */
+    .cartao__titulo--subpage {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 48px;
+
+        margin: 16px 0px;
+    }
+
+    /*  Imagens */
+    .img--desktop {
+        display: block;
+    }
+
+    .img--mobile {
+        display: none;
+    }
+
+    .cartao__img {
+        width: 100%;
+        border-radius: 16px;
+    }
+
+    /* Config do texto e cartões */
     .principal--subpage {
         padding: 16px 60px;
 
         display: grid;
-        
+
         grid-template-columns: 2fr 1fr;
         gap: var(--espacamento-interno-elementos);
-        
+
         grid-template-areas:
             "cartao--destaque__grid sessao__pico--desktop"
             "sessao--conteudo sessao__pico--desktop"
             "sessao--conteudo__imagem sessao__pico--desktop"
-            "sessao--conteudo-p2 sessao__pico--desktop"
+            "sessao--conteudo-p2 ."
             "sessao--conteudo__imagem-2 ."
             "sessao--conteudo-p3 ."
         ;
@@ -42,9 +144,16 @@
     }
 
     .sessao__pico--desktop {
-        grid-area: sessao__pico--desktop;
         display: grid;
-        grid-gap: var(--espaco-entre-elementos-baixo)
+        grid-area: sessao__pico--desktop;
+        grid-template-rows: auto;
+        grid-gap: var(--espaco-entre-elementos-baixo);
+
+        margin: 0px 32px;
+    }
+
+    .cartao--subpage {
+        margin: 16px 0px;
     }
 
     .sessao--conteudo-p2 {
@@ -57,6 +166,8 @@
 
     .sessao--conteudo__imagem {
         grid-area: sessao--conteudo__imagem;
+
+        margin: 16px 0px;
     }
 
     .sessao--conteudo__imagem-2 {
@@ -64,6 +175,11 @@
         gap: 12px;
 
         display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+
+        margin: 16px 0px;
     }
 
 
@@ -77,7 +193,7 @@
     .cartao__perfil--grid {
         display: flex;
         grid-column: 1;
-        align-self: center;
+
     }
 
     .cartao__info--grid {
@@ -89,8 +205,8 @@
 
 
     .cartao__titulo--grid {
-        grid-column: span 1;
         grid-row: auto;
+        grid-column: auto;
     }
 
 
