@@ -21,6 +21,7 @@
     --tamanho-dispositivo-mobile: 360px;
 
     --tamanho-dispositivo-desktop: 1440px;
+    
     --largura-maxima-conteudo-principal: 1120px;
     --largura-maxima-cartao-desktop: 256px;
 
@@ -35,7 +36,7 @@
     --espaco-entre-elementos-baixo: 8px;
 
     --espacamento-interno-corpo: 16px;
-    --espacamento-interno-botao: 16px 8px;
+    --espacamento-interno-elementos: 8px 16px;
 
     --espacamento-titulo-cartao-itens: 24px;
 
