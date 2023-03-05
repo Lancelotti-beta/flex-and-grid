@@ -8,5 +8,4 @@ o projeto será criar uma página, link do figma abaixo, ultilizando os conhecim
 
 ## Projeto HZC  
 
-    O projeto visa desenvolver o Layout da pagina principal, inicial, da HZC e algumas sub-page como videos, roupas e artigos. O projeto foi feito para ser desenvolvido com Grid e entender sobre Rows
-    e Columns.
+O projeto visa desenvolver o Layout da pagina principal, inicial, da HZC e algumas sub-page como videos, roupas e artigos. O projeto foi feito para ser desenvolvido com Grid e entender sobre Rows e Columns.
